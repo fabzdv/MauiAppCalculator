@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Número 1" />
+            <Entry x:Name="txt_num1" Placeholder="Digite um número " />
+
+            <Label Text="Número 2" />
+            <Entry x:Name="txt_num2" Placeholder="Digite outro número " />
+
+            <Label Text="Escolha a operação: " />
+            <Button Text="Adição" Clicked="Soma" />
+            <Button Text="Subtração" Clicked="Sub" />
+            <Button Text="Multiplicação" Clicked="Multi" />
+            <Button Text="Divisão" Clicked="Div" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
